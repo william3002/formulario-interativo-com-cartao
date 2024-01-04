@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Cartão </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="Estilo.css">
+  <link rel="stylesheet" href="Responsivo.css">
+</head>
+
+<body>
+  <main class=" border border-1 border-black">
+    <div id="fundo1">
+      
+      <div id="cartaoFront" class="container border border-1 border-black rounded-3">
+
+        <div class="circle">
+          <img src="images/card-logo.svg" alt="">
+        </div>
+
+        <h2 id="numeroDoCartao" class="text-center mx-5">0000 0000 0000 0000</h2>
+
+        <div class="row">
+          <p id="nomeCartao" class="ms-3 mt-3 col-7">Jane Appleseed</p>
+          <p id="numeroDeVencimento" class="ms-5 mt-3 col-2">00/00</p>
+        </div>
+
+      </div>
+
+      <div id="cartaoBack">
+        <img src="images/bg-card-back.png" alt="">
+        <p id="codigoCvc" class="text-end">000</p>
+      </div>
+    </div>
+
+    <div id="fundo2">
+      <div id="principal">
+        <div id="formulario" class="container mx-auto p-4">
+          <label>Cardholder Name</label> <br>
+          <input id="inputName" class="w-100 rounded-2 ps-3" type="text" placeholder="e.g. Jane Appleseed"><br>
+          <p id="resNome" class=""></p>
+
+          <label>Card Number</label><br>
+          <input id="inputNumberCard" class="w-100 rounded-2 ps-3  " type="text" placeholder="e.g. 1234 5678 9123 0000"
+            minlength="16" maxlength="19"><br>
+          <p id="resNumero" class=""></p>
+
+          <div class="row">
+            <div class="col-5">
+              <label>Exp. Date (MM/YY)</label> <br>
+              <input id="inputMonth" class="rounded-2" type="text" placeholder="MM" minlength="2" maxlength="2">
+              <input id="inputYear" class="rounded-2 ps-3  " type="text" placeholder="YY" minlength="2" maxlength="2">
+              <br>
+              <p id="resMesAno"></p>
+            </div>
+
+            <div class="col-7">
+              <label class="cvc">CVC</label> <br>
+              <input id="inputCodigo" class=" rounded-2 ps-3" type="text" placeholder="e.g. 123" maxlength="3">
+              <p id="resCvc" class=""></p>
+            </div>
+          </div>
+          <button onclick="insirirInfo()" class="btn w-100">Confirm</button>
+        </div>
+      </div>
+      <div id="mensagem-sucesso" class="container w-50 text-center" style="display: none;">
+        <img class="mb-4" src="images/icon-complete.svg" alt="">
+        <h1>Thank you!</h1>
+        <p class="text-muted">We've added your card details</p>
+        <button onclick="btnFechaJanela()" class="btn w-100">Continue</button>
+      </div>
+    </div>
+
+  </main>
+  <!-- Completed state start -->
+
+
+  <script src="insirir.js"></script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
