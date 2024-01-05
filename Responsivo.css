@@ -67,7 +67,7 @@
         width: 30px;
     }
 
-    .cvc{
+    .cvc {
         padding-top: 48px;
     }
 
@@ -83,15 +83,15 @@
         margin-top: 190px;
     }
 
-    #formulario>p{
+    #formulario>p {
         font-size: x-large;
     }
 
-    #resMesAno{
+    #resMesAno {
         font-size: x-large;
     }
 
-    #resCvc{
+    #resCvc {
         font-size: x-large;
     }
 
@@ -109,7 +109,7 @@
         transition: 700ms;
     }
 
-    label{
+    label {
         font-size: xx-large
     }
 
@@ -159,91 +159,130 @@
 
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
+
+    body {
+        width: 414;
+    }
 
     main {
         display: flex;
         flex-direction: column;
         background-color: white;
         min-height: 100vh;
+        width: 400px;
     }
 
     .container {
-        max-width: 800px;
+        max-width: 1299px;
     }
 
     #fundo1 {
-        height: 300px;
-        width: 1200px;
+        height: 239px;
+        width: 413px;
         background-image: linear-gradient(120deg, hsl(278, 68%, 11%), hsl(249, 99%, 64%), hsl(278, 94%, 30%), hsl(278, 68%, 11%));
     }
 
     #fundo2 {
         background-color: white;
-        width: 800px;
-        height: 700px;
+        width: 331px;
+        height: 800px;
     }
 
     #cartaoFront {
         background-image: linear-gradient(130deg, hsl(278, 68%, 11%), hsl(249, 99%, 64%), hsl(278, 94%, 30%), hsl(278, 68%, 11%));
-        max-width: 430px;
+        width: 294px;
+        height: 151px;
         padding: 10px;
-        margin-top: 150px;
-        margin-left: 150px;
+        margin-top: 133px;
+        margin-left: 36px;
         position: absolute;
     }
 
     .circle {
-        margin: 10px 10px 40px;
+        margin: 0px;
+    }
 
+    .circle>img {
+        width: 50px;
     }
 
     #cartaoFront>h2 {
-        margin-left: 30px;
+        margin-left: 0px;
+        margin-top: 17px;
         color: white;
+        font-size: 18px;
     }
 
     #cartaoFront>div>p {
         color: white;
     }
 
+    #nomeCartao {
+        font-size: 14px;
+        padding-top: 9px;
+    }
+
+    #numeroDeVencimento {
+        padding-top: 9px;
+        padding-left: 185px;
+    }
+
+
     #cartaoBack {
         max-width: 400px;
-        margin-top: 3%;
-        margin-left: 240px;
+        margin-top: 8%;
+        margin-left: 71px;
         position: static;
     }
 
     #cartaoBack>img {
-        max-width: 400px;
+        max-width: 298px;
     }
 
     #cartaoBack>p {
         position: absolute;
-        left: 310px;
-        top: 58px;
+        left: 60px;
+        top: 4px;
         color: white;
-        width: 30px;
+        width: 4px;
+    }
+
+
+    .cvc {
+        padding-top: 48px;
     }
 
     #codigoCvc {
         height: 120px;
         padding: 7px;
-        margin: 55px 0 50px 240px;
+        margin: 90px 0 50px 240px;
     }
 
-
     #formulario {
-        max-width: 500px;
-        margin-left: 300px;
-        margin-top: 150px;
+        max-width: 335px;
+        margin-left: 43px;
+        margin-top: 58px;
+    }
+
+    #formulario>p {
+        font-size: x-large;
+    }
+
+    #resMesAno {
+        font-size: x-large;
+    }
+
+    #resCvc {
+        font-size: x-large;
     }
 
     .btn {
         margin-top: 10px;
+        font-size: x-large;
         background-color: hsl(278, 68%, 11%);
         color: white;
-        height: 45px;
+        height: 70px;
     }
 
     .btn:hover {
@@ -252,12 +291,18 @@
         transition: 700ms;
     }
 
+    label {
+        font-size: x-large
+    }
+
     input {
-        height: 47px;
+        font-size: large;
+        height: 60px;
     }
 
     #inputYear {
-        width: 75px;
+        width: 59px;
+        padding-left: 25px;
     }
 
     #inputName {
@@ -265,20 +310,43 @@
     }
 
     #inputMonth {
-        width: 75px;
-        padding-left: 12px;
+        width: 59px;
+        padding-left: 14px;
+    }
+    
+    #inputCodigo {
+        width: 100px;
     }
 
     #nomeCartao {
         text-transform: capitalize;
+        position: absolute;
     }
 
-    #inputCodigo {
-        width: 100%;
+    #numeroDeVencimento {
+        position: absolute;
+        margin-left: 100px;
+    }
+
+    #labelMesAno{
+        font-size: 20px;
     }
 
     #mensagem-sucesso {
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
-} */
+    #mensagem-sucesso>img {
+        width: 100px;
+    }
+
+    #mensagem-sucesso>h1 {
+        font-size: 90px;
+    }
+
+    #mensagem-sucesso>p {
+        font-size: 25px;
+        margin-bottom: 52px;
+    }
+
+}
