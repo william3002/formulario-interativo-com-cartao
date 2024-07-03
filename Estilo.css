@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('https://fonts.google.com/specimen/Space+Grotesk');
-  font-size: 500;
-}
-
 body {
-  font-family: 'Space Grotes';
+  font-family: "Space Grotesk", sans-serif;
 }
 
 main {
@@ -43,7 +37,7 @@ main {
 }
 
 #cartaoFront>h2 {
-  margin-left: 30px;
+  font-size: 25px;
   color: white;
 }
 
